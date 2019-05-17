@@ -14,12 +14,12 @@ window.onload = () => {
                     id: data.id,
                     url: data.images.fixed_width_small.url,
                 })
-                    .then(function () {
-                        console.log("Document successfully written!");
-                    })
-                    .catch(function (error) {
-                        console.error("Error writing document: ", error);
-                    });
+                .then(function () {
+                    console.log("Document successfully written!");
+                })
+                .catch(function (error) {
+                    console.error("Error writing document: ", error);
+                });
             })
         })
 }
