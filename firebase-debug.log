@@ -1,0 +1,35 @@
+[debug] [2019-05-17T01:19:12.750Z] ----------------------------------------------------------------------
+[debug] [2019-05-17T01:19:12.756Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Esthéfanie\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-05-17T01:19:12.757Z] CLI Version:   6.5.0
+[debug] [2019-05-17T01:19:12.757Z] Platform:      win32
+[debug] [2019-05-17T01:19:12.757Z] Node Version:  v11.12.0
+[debug] [2019-05-17T01:19:12.760Z] Time:          Thu May 16 2019 22:19:12 GMT-0300 (GMT-03:00)
+[debug] [2019-05-17T01:19:12.760Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-17T01:19:12.846Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-17T01:19:12.848Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Users\Esthéfanie\Desktop\Projetos\gif-me-love
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2019-05-17T01:20:26.542Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-05-17T01:20:26.542Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-05-17T01:20:26.750Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-17T01:20:26.819Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?page_size=100  
+ 
+[debug] [2019-05-17T01:20:28.084Z] <<< HTTP RESPONSE 200
