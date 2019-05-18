@@ -1,5 +1,5 @@
 const gifBase = document.querySelector('.gifBase');
-const dataBase = firebase.firestore();
+const dataBase = firebase.database();
 
 window.onload = () => {
     requestAPI.random
@@ -10,7 +10,7 @@ window.onload = () => {
 
             const image = document.querySelector('.image-gif')
             image.addEventListener('click', event => {
-                dataBase.collection("favorite").add({
+                dataBase.ref("favoriteGifs/").set({
                     id: data.id,
                     url: data.images.fixed_width_small.url,
                 })
