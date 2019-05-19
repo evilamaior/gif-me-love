@@ -10,7 +10,7 @@ window.onload = () => {
 
             const image = document.querySelector('.image-gif')
             image.addEventListener('click', event => {
-                dataBase.ref("favoriteGifs/").set({
+                dataBase.ref("favoriteGifs/").push({
                     id: data.id,
                     url: data.images.fixed_width_small.url,
                 })
