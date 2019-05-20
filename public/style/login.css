@@ -1,139 +1,125 @@
 .logo {
-  font-family: 'Roboto', sans-serif;
-  font-size: 7vw;
-  font-weight: 900;
-  color: rgb(245, 94, 102);
-  padding-top: 7vh;
-  padding-bottom: 4vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 7vw;
+    font-weight: 900;
+    color: rgb(245, 94, 102);
+    padding-top: 7vh;
+    padding-bottom: 4vh;
 }
 
 .input-area {
-  border: none;
-  border-bottom: 1.8px solid;
-  border-bottom-color: rgb(226, 226, 250);
-  font-size: 3vw;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+    border: none;
+    border-bottom: 1.8px solid;
+    border-bottom-color: rgb(226, 226, 250);
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 .login-btn {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5vh;
-  width: 95%;
-  height: 4.5vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vh;
 }
 
 .opt {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2vh;
-  color: rgb(78, 83, 78);
-}
-
-.fb {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2vh;
-  background-color: #3b5998;
-}
-
-.gggl {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2vh;
-  background-color: #db3236;
-}
-
-.icon {
-  margin: 1vh 3vw 1vh 0vw;
-}
-
-.redirect-signup {
-  font-family: 'Roboto', sans-serif;
-  color: rgb(78, 83, 78);
-  font-size: 4vw;
-}
-
-.underline {
-  border-bottom: 1.8px solid;
-  border-bottom-color: rgb(226, 226, 250);
-}
-
-@media (min-width: 1281px) {
-  .input-area {
-    font-size: 1vw;
-  }
-  
-  .login-btn {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8vh;
-    width: 95%;
-    height: 4.5vh;
-  }
-  
-  .opt {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6vh;
-    color: rgb(78, 83, 78);
-  }
-  
-  .fb {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8vh;
-    background-color: #3b5998;
-  }
-  
-  .gggl {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8vh;
-    background-color: #db3236;
-  }
-  
-  .icon {
-    margin: 1vh 3vw 1vh 0vw;
-  }
-  
-  .redirect-signup {
-    font-family: 'Roboto', sans-serif;
-    color: rgb(78, 83, 78);
-    font-size: 2.5vw;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .input-area {
-    font-size: 1.8vw;
-  }
-  
-  .login-btn {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5vh;
-    width: 95%;
-    height: 4.5vh;
-  }
-  
-  .opt {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2vh;
     color: rgb(78, 83, 78);
-  }
-  
-  .fb {
+}
+
+.fb {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3vh;
+    font-size: 1.2vh;
     background-color: #3b5998;
-  }
-  
-  .gggl {
+}
+
+.gggl {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3vh;
+    font-size: 1.2vh;
     background-color: #db3236;
-  }
-  
-  .icon {
+}
+
+.icon {
     margin: 1vh 3vw 1vh 0vw;
-  }
-  
-  .redirect-signup {
+}
+
+.redirect-signup {
     font-family: 'Roboto', sans-serif;
     color: rgb(78, 83, 78);
-    font-size: 2.5vw;
-  }
+    font-size: 4vw;
+}
+
+.underline {
+    border-bottom: 1.8px solid;
+    border-bottom-color: rgb(226, 226, 250);
+}
+
+@media (min-width: 1281px) {
+    .input-area {
+        font-size: 1vw;
+    }
+    .login-btn {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.8vh;
+        width: 95%;
+        height: 4.5vh;
+    }
+    .opt {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6vh;
+        color: rgb(78, 83, 78);
+    }
+    .fb {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.8vh;
+        background-color: #3b5998;
+    }
+    .gggl {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.8vh;
+        background-color: #db3236;
+    }
+    .icon {
+        margin: 1vh 3vw 1vh 0vw;
+    }
+    .redirect-signup {
+        font-family: 'Roboto', sans-serif;
+        color: rgb(78, 83, 78);
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .input-area {
+        font-size: 1.8vw;
+    }
+    .login-btn {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5vh;
+        width: 95%;
+        height: 4.5vh;
+    }
+    .opt {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2vh;
+        color: rgb(78, 83, 78);
+    }
+    .fb {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3vh;
+        background-color: #3b5998;
+    }
+    .gggl {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3vh;
+        background-color: #db3236;
+    }
+    .icon {
+        margin: 1vh 3vw 1vh 0vw;
+    }
+    .redirect-signup {
+        font-family: 'Roboto', sans-serif;
+        color: rgb(78, 83, 78);
+        font-size: 2.5vw;
+    }
 }

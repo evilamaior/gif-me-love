@@ -1,6 +1,6 @@
 const signUpBtn = document.querySelector(".register-btn");
 const fbBtn = document.querySelector(".fb");
-const gglBtn = document.querySelector(".gggl");
+const ggglBtn = document.querySelector(".gggl");
 const email = document.querySelector("#signUpEmail");
 const password = document.querySelector("#signUpPassword");
 
