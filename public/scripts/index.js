@@ -1,15 +1,14 @@
 const gifBase = document.querySelector('.gifBase');
 const dataBase = firebase.database();
-let index = 0;
+// let index = 0;
 
 function getGifOnApi() {
     requestAPI.random
         .then(response => response.json())
         .then(response => {
             const { data } = response;
-            
             gifBase.innerHTML = gifOptions.image(data)
-            index++;
+            // index++;
 
             const image = document.querySelector('.image-gif')
             image.addEventListener('swipe', event => {

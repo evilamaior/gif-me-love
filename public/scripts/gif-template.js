@@ -1,5 +1,5 @@
 const gifOptions = {
-    image: data[index] => `
+    image: data => `
       <img
         class="image-gif"
         id="${data.id}"
