@@ -3,17 +3,19 @@ const fbBtn = document.querySelector(".fb");
 const ggglBtn = document.querySelector(".gggl");
 const email = document.querySelector("#signUpEmail");
 const password = document.querySelector("#signUpPassword");
+const emailInput = document.getElementById("signUpEmail").value;
+const passwordInput = document.getElementById("signUpPassword").value;
 
 window.onload = () => {
     typing();
-    signUpBtn.addEventListener('click', () => {
-        signUp;
+    signUpBtn.addEventListener('click', (emailInput, passwordInput) => {
+        createUser(emailInput, passwordInput);
     });
     ggglBtn.addEventListener('click', () => {
-        signUpGoogle;
+        signUpGoogle();
     });
     fbBtn.addEventListener('click', () => {
-        signUpFacebook;
+        signUpFacebook();
     });
 }
 
@@ -34,13 +36,12 @@ function typing() {
     });
 }
 
-function signUp(e) {
-    e.preventDefault();
-    createUser(email, password);
-}
+// function signUp() {
+//     createUser(emailInput, passwordInput);
+// }
 
-function createUser(email, password) {
-    firebase.auth().createUserWithEmailAndPassword(email, password)
+function createUser(emailInput, passwordInput) {
+    firebase.auth().createUserWithEmailAndPassword(emailInput, passwordInput)
         .then(function(response) {
             const userId = response.user.uid;
             createProfile(userId);
