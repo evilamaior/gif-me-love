@@ -1,25 +1,48 @@
 const gifBase = document.querySelector('.gifBase');
 const dataBase = firebase.database();
+let index = 0;
 
-window.onload = () => {
-    requestAPI.random
+function getGifOnApi() {
+    fetch('https://api.giphy.com/v1/gifs/trending?&api_key=xLzlu38r5osxj1ou6IA0hxMvrFVg3kad')
         .then(response => response.json())
-        .then(response => {
-            const { data } = response;
-            gifBase.innerHTML = gifOptions.image(data)
-
-            const image = document.querySelector('.image-gif')
-            image.addEventListener('click', event => {
-                dataBase.ref("favoriteGifs/").push({
-                    id: data.id,
-                    url: data.images.fixed_width_small.url,
-                })
-                .then(function () {
-                    console.log("Document successfully written!");
-                })
-                .catch(function (error) {
-                    console.error("Error writing document: ", error);
-                });
-            })
-        })
+        .then(response => printNTela(response.data))
 }
+
+function printNTela(data) {
+    const url = data[index].images.fixed_width_small.url;
+    gifBase.innerHTML = template(url);
+    index++;
+}
+
+function template(url) {
+    return `<img
+      class="image-gif"
+      src="${url}"
+    />`
+}
+
+const hammer = new Hammer(gifBase);
+hammer.on('swipe', function (event) {
+    if (event.deltaX > 0) {
+        sendGifsToFirebase(event.target.src);
+        getGifOnApi()
+    }
+    else {
+        getGifOnApi()
+    }
+})
+
+function sendGifsToFirebase(url) {
+    dataBase.ref("favoriteGifs/").push({
+        url
+    })
+        .then(function () {
+            console.log("Document successfully written!");
+        })
+        .catch(function (error) {
+            console.error("Error writing document: ", error);
+        });
+}
+
+
+getGifOnApi();
