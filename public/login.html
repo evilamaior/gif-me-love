@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gif me love</title>
+
+    <script src="firebase-config.js"></script>
+    <script src="/__/firebase/6.0.2/firebase-app.js"></script>
+    <script src="/__/firebase/6.0.2/firebase-auth.js"></script>
+    <script src="/__/firebase/6.0.2/firebase-database.js"></script>
+    <script src="/__/firebase/6.0.2/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/login.css">
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <div class="col-sm-12 d-flex flex-column align-items-center">
+        <!-- <img src="" class="mb-2" alt="logo da gifmelove, com o título e um coração dentro de um balão de diálogo" /> -->
+        <h1 class="logo">Gif me love ♥</h1>
+      </div>
+    </header>
+    <main class="container-fluid col-sm-6 col-md-12 col-lg-12 d-flex flex-column align-items-center">
+      <section class="create form-group col-sm-6 col-md-8 col-lg-8">
+        <form class="form-wrap d-flex flex-column align-items-center">
+          <input type="email" id="signInEmail" class="form-control mb-3 input-area" placeholder="Email">
+          <input type="password" id="signInPassword" class="form-control input-area" placeholder="Senha">
+          <button type="button" disabled="disabled" class="login-btn btn btn-block btn-dark mt-3">Entrar</button>
+        </form>
+        <div class="create d-flex flex-column align-items-center">
+          <p class="mt-4 mb-4 opt">OR</p>
+          <div class="d-flex flex-column mb-2 col-md-12 col-lg-8">
+            <button id="signInBtnFb" class="btn fb btn-block btn-dark"><i class="fab fa-facebook-square icon"></i> LOGIN WITH FACEBOOK</button>
+            <button id="signInBtnGggl" class="btn gggl btn-block btn-dark"><i class="fab fa-google icon"></i> LOGIN WITH GOOGLE</button> 
+          </div>
+        </div>
+      </section>
+      <section class="mt-4">
+        <a href="register.html" class="redirect-signup underline">Ainda não tem uma conta?</a>
+      </section>
+    </main>
+    <script src="./scripts/login.js"></script>
+  </body>
+
+  </html>
