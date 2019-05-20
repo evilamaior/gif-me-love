@@ -1,0 +1,95 @@
+.logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 7vw;
+  font-weight: 900;
+  color: rgb(245, 94, 102);
+  padding-top: 7vh;
+  padding-bottom: 4vh;
+}
+
+.sub {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(78, 83, 78);
+  font-size: 3.8vw;
+  padding-bottom: 0.5vh;
+}
+
+.create-icons {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.4vw;
+  padding-top: 3vh;
+  margin-bottom: 0vh;
+}
+
+.icons {
+  padding-left: 3.8vw;
+  padding-right: 3.8vw;
+  font-size: 4.5vh;
+}
+
+.fb {
+  color: #3b5998;
+}
+
+.gggl {
+  color: #db3236;
+}
+
+.underline {
+  border-bottom: 1.8px solid;
+  border-bottom-color: rgb(226, 226, 250);
+}
+
+@media (min-width: 1281px) {
+  .sub {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(78, 83, 78);
+    font-size: 2vw;
+    padding-bottom: 0.5vh;
+  }
+
+  .create-icons {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    padding-top: 3vh;
+    margin-bottom: 0vh;
+  }
+  
+  .icons {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    font-size: 7vh;
+  }
+
+  .login {
+    margin-top: 2vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .sub {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(78, 83, 78);
+    font-size: 2.5vw;
+    padding-bottom: 0.5vh;
+  }
+
+  .create-icons {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8vw;
+    padding-top: 3vh;
+    margin-bottom: 0vh;
+  }
+  
+  .icons {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    font-size: 4vh;
+  }
+
+  .login {
+    margin-top: 2vh;
+  }
+  
+}
