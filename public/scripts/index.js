@@ -9,7 +9,7 @@ function getGifOnApi() {
 }
 
 function printNTela(data) {
-    const url = data[index].images.fixed_width_small.url;
+    const url = data[index].images.original_still.url;
     gifBase.innerHTML = template(url);
     index++;
 }

@@ -1,20 +1,16 @@
+const database = firebase.database();
+
 const signUpBtn = document.querySelector(".register-btn");
 const fbBtn = document.querySelector(".fb");
 const ggglBtn = document.querySelector(".gggl");
-const email = document.querySelector("#signUpEmail");
-const password = document.querySelector("#signUpPassword");
+const emailElement = document.querySelector("#signUpEmail");
+const passwordElement = document.querySelector("#signUpPassword");
 
 window.onload = () => {
     typing();
-    signUpBtn.addEventListener('click', () => {
-        signUp;
-    });
-    ggglBtn.addEventListener('click', () => {
-        signUpGoogle;
-    });
-    fbBtn.addEventListener('click', () => {
-        signUpFacebook;
-    });
+    signUpBtn.addEventListener('click',signUp);
+    ggglBtn.addEventListener('click',signUpGoogle);
+    fbBtn.addEventListener('click', signUpFacebook);
 }
 
 function manage(email, password) {
@@ -26,16 +22,18 @@ function manage(email, password) {
 }
 
 function typing() {
-    let inputs = [email, password];
+    let inputs = [emailElement, passwordElement];
     inputs.forEach(function(el) {
         el.addEventListener("keyup", function() {
-            manage(email, password);
+            manage(emailElement, passwordElement);
         });
     });
 }
 
 function signUp(e) {
     e.preventDefault();
+    const email = emailElement.value;
+    const password = passwordElement.value;
     createUser(email, password);
 }
 
@@ -43,6 +41,10 @@ function createUser(email, password) {
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .then(function(response) {
             const userId = response.user.uid;
+            database.ref('users/' + userId).set({
+                email: email
+            })
+            
             createProfile(userId);
         })
         .catch(function(error) {
@@ -81,5 +83,6 @@ function handleErrors(error) {
 }
 
 function createProfile(userId) {
-    window.location = `create-profile.html?id=${response.user.uid}`;
+    
+    window.location = `create-profile.html?id=${userId}`;
 }
