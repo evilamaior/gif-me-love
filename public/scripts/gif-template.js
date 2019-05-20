@@ -1,9 +1,9 @@
 const gifOptions = {
-    image: options => `
+    image: data[index] => `
       <img
         class="image-gif"
-        id="${options.id}"
-        src="${options.images.fixed_width_small.url}"
+        id="${data.id}"
+        src="${data.images.fixed_width_small.url}"
       />
     `
   }
