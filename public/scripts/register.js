@@ -30,7 +30,6 @@ function typing() {
     });
 }
 
-<<<<<<< HEAD
 function signUp(e) {
     e.preventDefault();
     const email = emailElement.value;
@@ -38,8 +37,8 @@ function signUp(e) {
     createUser(email, password);
 }
 
-function createUser(emailInput, passwordInput) {
-    firebase.auth().createUserWithEmailAndPassword(emailInput, passwordInput)
+function createUser(email, password) {
+    firebase.auth().createUserWithEmailAndPassword(email, password)
         .then(function(response) {
             const userId = response.user.uid;
             database.ref('users/' + userId).set({
