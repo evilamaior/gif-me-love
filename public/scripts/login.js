@@ -6,14 +6,14 @@ const password = document.querySelector("#signInPassword");
 
 window.onload = () => {
     typing();
-    loginBtn.addEventListener('click', () => {
-        signInEmail;
+    loginBtn.addEventListener('click', (e) => {
+        signInEmail(e);
     });
     ggglSignIn.addEventListener('click', () => {
-        signInGoogle;
+        signInGoogle();
     });
     fbSignIn.addEventListener('click', () => {
-        signInFacebook;
+        signInFacebook();
     });
 }
 

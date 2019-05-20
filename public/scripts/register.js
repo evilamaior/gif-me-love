@@ -30,6 +30,7 @@ function typing() {
     });
 }
 
+<<<<<<< HEAD
 function signUp(e) {
     e.preventDefault();
     const email = emailElement.value;
@@ -37,8 +38,8 @@ function signUp(e) {
     createUser(email, password);
 }
 
-function createUser(email, password) {
-    firebase.auth().createUserWithEmailAndPassword(email, password)
+function createUser(emailInput, passwordInput) {
+    firebase.auth().createUserWithEmailAndPassword(emailInput, passwordInput)
         .then(function(response) {
             const userId = response.user.uid;
             database.ref('users/' + userId).set({
@@ -56,7 +57,6 @@ function signUpGoogle() {
     const provider = new firebase.auth.GoogleAuthProvider();
     signInWithPopup(provider);
 }
-
 
 function signUpFacebook() {
     const provider = new firebase.auth.FacebookAuthProvider();
