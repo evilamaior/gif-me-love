@@ -13,6 +13,23 @@ window.onload = () => {
   fbBtn.addEventListener('click', signUpFacebook);
 }
 
+function manage(email, password) {
+  if (email.value !== '' && password.value !== '') {
+    signUpBtn.disabled = false;
+  } else {
+    signUpBtn.disabled = true;
+  }
+}
+
+function typing() {
+  let inputs = [emailInput, passwordInput];
+  inputs.forEach(function (el) {
+    el.addEventListener("keyup", function () {
+      manage(emailInput, passwordInput);
+    });
+  });
+}
+
 function signUp(e) {
   e.preventDefault();
   const email = emailInput.value;
@@ -46,7 +63,7 @@ function signUpFacebook() {
 
 function signInWithPopup(provider) {
   firebase.auth().signInWithPopup(provider).then(function (response) {
-    const token = response.credential.accessToken;
+    // const token = response.credential.accessToken;
     const userId = response.user;
     createProfile(userId);
   }).catch(function (error) {
