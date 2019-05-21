@@ -1,29 +1,18 @@
-/* .gifBase{
-    width: 50%;
-    height: auto;
+body {
+    background-color: #4b555d;
 }
 
-.image-gif{
-    width: 90%;
-    height: auto;
-    max-height: 20em;
-} */
-
-/* .card{
-    width: 18em; height: 30em;
-} */
-
-.fa-heart{
+.fa-heart {
     color: rgb(245, 94, 102);
     font-size: 35px;
 }
 
-.fa-grin-tears{
+.fa-grin-tears {
     color: gold;
     font-size: 35px;
 }
 
-.fa-times-circle{
+.fa-times-circle {
     color: red;
     font-size: 35px;
 }
