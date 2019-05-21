@@ -1,0 +1,18 @@
+body {
+    background-color: #4b555d;
+}
+
+.fa-heart {
+    color: rgb(245, 94, 102);
+    font-size: 35px;
+}
+
+.fa-grin-tears {
+    color: gold;
+    font-size: 35px;
+}
+
+.fa-times-circle {
+    color: red;
+    font-size: 35px;
+}
