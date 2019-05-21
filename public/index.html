@@ -2,91 +2,53 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gif me love</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gif me love</title>
 
-  <script src="/__/firebase/6.0.2/firebase-app.js"></script>
-  <script src="/__/firebase/6.0.2/firebase-auth.js"></script>
-  <script src="/__/firebase/6.0.2/firebase-database.js"></script>
-  <script src="/__/firebase/6.0.2/firebase-firestore.js"></script>
-  <script src="/__/firebase/init.js"></script>
+    <script src="/__/firebase/6.0.2/firebase-app.js"></script>
+    <script src="/__/firebase/6.0.2/firebase-auth.js"></script>
+    <script src="/__/firebase/6.0.2/firebase-database.js"></script>
+    <script src="/__/firebase/6.0.2/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style/register.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/register.css">
 </head>
 
 <body>
-  <header class="container-fluid">
-    <div class="col-sm-12 d-flex flex-column align-items-center">
-      <!-- <img src="" class="mb-2" alt="logo da gifmelove, com o título e um coração dentro de um balão de diálogo" /> -->
-      <h1 class="logo">Gif me love ♥</h1>
-    </div>
-  </header>
-
-  <main class="container-fluid col-sm-6 col-md-12 col-lg-12 d-flex flex-column align-items-center">
-    <section class="create form-group col-sm-6 col-md-8 d-flex flex-column align-items-center">
-      <p class="sub">FASPHp hfishdfoi h FHAOSIDHFP hfiodshof hOIDHFAOS</p>
-      <form class="form-wrap mb-2 p-2 col-lg-6">
-        <input type="email" id="signInEmail" class="form-control mb-3" placeholder="Email">
-        <input type="password" id="signInPassword" class="form-control" placeholder="Senha">
-        <button type="button" disabled="disabled" class="login-btn btn btn-block btn-dark mt-3">Entrar</button>
-      </form>
-      <div class="create d-flex flex-column align-items-center icons col-md-12 col-lg-12">
-        <p class="create-icons">Entrar com</p>
-        <div>
-          <i class="fab fa-facebook-square fb icons" id="signInBtnFb"></i>
-          <i class="fab fa-google gggl icons" id="signInBtnGggl"></i>
+    <header class="container-fluid">
+        <div class="col-sm-12 d-flex flex-column align-items-center">
+            <!-- <img src="" class="mb-2" alt="logo da gifmelove, com o título e um coração dentro de um balão de diálogo" /> -->
+            <h1 class="logo">Gif me love ♥</h1>
         </div>
-      </div>
-    </section>
-    <section class="register">
-      <button type="button" id="btn" class="btn btn-outline-dark" data-toggle="modal" data-target="#modalRegisterForm">Ainda não tem uma conta?</button>
+    </header>
 
-      <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="modalRegisterFormLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header text-center">
-              <h4 class="modal-title w-100 font-weight-bold">Crie sua conta para começar os matches!</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+    <main class="container-fluid col-sm-6 col-md-12 col-lg-12 d-flex flex-column align-items-center">
+        <section class="create form-group col-sm-6 col-md-8 d-flex flex-column align-items-center">
+            <p class="sub">FASPHp hfishdfoi h FHAOSIDHFP hfiodshof hOIDHFAOS</p>
+            <form class="form-wrap mb-2 p-2 col-lg-6">
+                <input type="email" id="signInEmail" class="form-control mb-3" placeholder="Email">
+                <input type="password" id="signInPassword" class="form-control" placeholder="Senha">
+                <button type="button" disabled="disabled" class="login-btn btn btn-block btn-dark mt-3">Entrar</button>
+            </form>
+            <div class="create d-flex flex-column align-items-center icons col-md-12 col-lg-12">
+                <p class="create-icons">Entrar com</p>
+                <div>
+                    <i class="fab fa-facebook-square fb icons" id="signInBtnFb"></i>
+                    <i class="fab fa-google gggl icons" id="signInBtnGggl"></i>
+                </div>
             </div>
-            <div class="modal-body mx-3">
-              <div class="md-form mb-5">
-                <i class="fas fa-envelope prefix"></i>
-                <input type="signUpEmail" id="orangeForm-email" class="form-control">
-                <label>Email</label>
-              </div>
-              <div class="md-form mb-4">
-                <i class="fas fa-lock prefix"></i>
-                <input type="signUpPassword" id="orangeForm-pass" class="form-control">
-                <label>Senha</label>
-              </div>
-            </div>
-            <div class="modal-footer d-flex justify-content-center">
-              <button class="btn btn-deep-orange register-btn">Criar conta</button>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
+        <section class="register">
+            <a href="register.html" class="sub underline">Ainda não tenho uma conta</a>
+        </section>
+    </main>
 
-
-
-
-
-
-    </section>
-  </main>
-
-  <script src="./scripts/login.js"></script>
-  <script src="./scripts/register.js"></script>
+    <script src="./scripts/login.js"></script>
 </body>
 
 </html>
