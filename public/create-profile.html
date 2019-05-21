@@ -1,1 +1,94 @@
-    <p>aqui é aquela tela de criar/editar perfil para então ser direcionado para o index</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gif me love</title>
+
+    <script src="/__/firebase/6.0.2/firebase-app.js"></script>
+    <script src="/__/firebase/6.0.2/firebase-auth.js"></script>
+    <script src="/__/firebase/6.0.2/firebase-database.js"></script>
+    <script src="/__/firebase/6.0.2/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style/create-profile.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/login.css">
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div class="col-sm-12 d-flex flex-column align-items-center">
+            <h1 class="logo">Gif me love ♥</h1>
+        </div>
+    </header>
+
+    <main class="container-fluid col-sm-6 col-md-12 col-lg-12 d-flex flex-column align-items-center">
+        <form class="create form-group col-sm-6 col-md-8 d-flex flex-column align-items-center">
+            <div class="form-group col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default">
+                </div>
+            </div>
+
+            <div class="form-group col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Gênero</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Escolher</option>
+                        <option value="1">Mulher</option>
+                        <option value="2">Homem</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <article class="input-group-text" id="inputGroup-sizing-default">Data de Nascimento</article>
+                    </div>
+                    <input type="date" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default">
+                </div>
+            </div>
+
+            <div class="form-group col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Interesse em:</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Escolher</option>
+                        <option value="1">Mulher</option>
+                        <option value="2">Homem</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Faixa etária</span>
+                    </div>
+                    <input type="number" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default" placeholder="18+">
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
