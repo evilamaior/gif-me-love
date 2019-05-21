@@ -1,16 +1,12 @@
 const database = firebase.database();
 
 const signUpBtn = document.querySelector(".register-btn");
-const fbBtn = document.querySelector(".fb");
-const ggglBtn = document.querySelector(".gggl");
 const emailInput = document.querySelector("#signUpEmail");
 const passwordInput = document.querySelector("#signUpPassword");
 
 window.onload = () => {
     typing();
     signUpBtn.addEventListener('click', signUp);
-    ggglBtn.addEventListener('click', signUpGoogle);
-    fbBtn.addEventListener('click', signUpFacebook);
 }
 
 function manage(email, password) {
@@ -49,30 +45,6 @@ function createUser(email, password) {
         .catch(function(error) {
             handleErrors(error)
         });
-}
-
-function signUpGoogle() {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    signInWithPopup(provider);
-}
-
-function signUpFacebook() {
-    const provider = new firebase.auth.FacebookAuthProvider();
-    signInWithPopup(provider);
-}
-
-function signInWithPopup(provider) {
-    firebase.auth().signInWithPopup(provider).then(function(response) {
-        // const token = response.credential.accessToken;
-        const userId = response.user;
-        createProfile(userId);
-    }).catch(function(error) {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        const email = error.email;
-        const credential = error.credential;
-        alert(errorCode, errorMessage, email, credential);
-    });
 }
 
 function handleErrors(error) {
