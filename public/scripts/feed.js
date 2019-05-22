@@ -39,7 +39,7 @@ let gifCounter = 0;
 function incrementIndex() {
   gifCounter ++;
   if (gifCounter >= 5){
-    alert("It's a match")
+    window.location = `index.html`;
   }
 }
 
