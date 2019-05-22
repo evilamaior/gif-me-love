@@ -16,3 +16,19 @@ body {
     color: red;
     font-size: 35px;
 }
+
+.modal-content {
+    display: none;
+    background-color: none;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.show {
+    display: block;
+}
+
+.img-gif {
+    width: 70vw;
+}

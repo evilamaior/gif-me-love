@@ -1,5 +1,4 @@
 const database = firebase.database();
-
 const signUpBtn = document.querySelector(".register-btn");
 const emailInput = document.querySelector("#signUpEmail");
 const passwordInput = document.querySelector("#signUpPassword");
