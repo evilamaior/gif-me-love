@@ -16,3 +16,11 @@ body {
     color: red;
     font-size: 35px;
 }
+
+.modal-content {
+    display: none;
+}
+
+.show {
+    display: block;
+}
