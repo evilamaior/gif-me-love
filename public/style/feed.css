@@ -19,8 +19,15 @@ body {
 
 .modal-content {
     display: none;
+    background-color: none;
+    width: 100vw;
+    height: auto;
 }
 
 .show {
     display: block;
+}
+
+figure {
+    width: 50vw;
 }

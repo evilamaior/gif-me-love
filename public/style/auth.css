@@ -1,9 +1,14 @@
+body {
+    background-image: url('https://i.giphy.com/media/5kFy1fSCED6KC9uvY0/giphy.webp');
+    background-size: stretch;
+}
+
 .logo {
     font-family: 'Roboto', sans-serif;
     font-size: 7vw;
     font-weight: 900;
     color: rgb(245, 94, 102);
-    padding-top: 7vh;
+    padding-top: 3.5vh;
     padding-bottom: 4vh;
 }
 
@@ -52,6 +57,10 @@
 .underline {
     border-bottom: 1.8px solid;
     border-bottom-color: rgb(226, 226, 250);
+}
+
+a:hover, a:visited {
+    color: whitesmoke;
 }
 
 @media (min-width: 1281px) {
