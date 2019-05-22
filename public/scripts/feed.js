@@ -37,13 +37,13 @@ hammer.on('swipe', function (event) {
 
 function modal() {
   $("#demo01").animatedModal();
-  $(".modal-content").addClass("show");
+  $(".modal-content").addClass("show d-flex flex-column align-items-center");
   $('#demo01').click();
 }
 
 let gifCounter = 0;
 function incrementIndex() {
-  // pensar em um loop pra manter isso aqui seguindo com numeros aleatorios no segundo?
+  // pensar em um loop pra manter isso aqui seguindo com numeros al,eatorios no segundo?
   gifCounter ++;
   if (gifCounter >= 5){
     modal();

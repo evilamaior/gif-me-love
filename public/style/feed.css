@@ -21,13 +21,14 @@ body {
     display: none;
     background-color: none;
     width: 100vw;
-    height: auto;
+    height: 100vh;
+    margin: 0;
 }
 
 .show {
     display: block;
 }
 
-figure {
-    width: 50vw;
+.img-gif {
+    width: 70vw;
 }
