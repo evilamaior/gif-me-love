@@ -24,14 +24,25 @@ function template(url) {
 
 const hammer = new Hammer(gifBase);
 hammer.on('swipe', function (event) {
+  
   if (event.deltaX > 0) {
     sendGifsToFirebase(event.target.src);
+    incrementIndex()
     getGifOnApi()
   }
   else {
     getGifOnApi()
   }
 })
+
+let gifCounter = 0;
+function incrementIndex() {
+  gifCounter ++;
+  if (gifCounter >= 5){
+    alert("It's a match")
+  }
+}
+
 
 function sendGifsToFirebase(url) {
   dataBase.ref(`${USER_ID}/favoriteGifs/`).push({
