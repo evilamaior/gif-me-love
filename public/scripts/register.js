@@ -3,6 +3,7 @@ const signUpBtn = document.querySelector(".register-btn");
 const emailInput = document.querySelector("#signUpEmail");
 const passwordInput = document.querySelector("#signUpPassword");
 
+
 window.onload = () => {
     typing();
     signUpBtn.addEventListener('click', signUp);
