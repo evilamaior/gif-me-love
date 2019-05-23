@@ -1,8 +1,13 @@
 .logo {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Caveat', cursive;
+    color: 	#df0021;;
     font-size: 7vw;
     font-weight: 900;
-    color: rgb(245, 94, 102);
     padding-top: 7vh;
     padding-bottom: 4vh;
 }
+
+.fa-gratipay {
+    color: 	#df0021;
+    font-size: 7vw;
+  }

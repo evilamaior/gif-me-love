@@ -1,15 +1,20 @@
 body {
-    background-image: url('https://i.giphy.com/media/5kFy1fSCED6KC9uvY0/giphy.webp');
+    background-image: url('https://media.giphy.com/media/26tPqM9uMHoqfYfqE/giphy.gif');
     background-size: stretch;
 }
 
 .logo {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Caveat', cursive;
     font-size: 7vw;
     font-weight: 900;
-    color: rgb(245, 94, 102);
+    color: #df0021;
     padding-top: 3.5vh;
     padding-bottom: 4vh;
+}
+
+.fa-gratipay {
+    font-size: 7vw;
+    color: 	#df0021;
 }
 
 .input-area {
