@@ -67,7 +67,14 @@ a:hover, a:visited {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: whitesmoke;
-    font-size: 14vw;
+    font-size: 5.6vw;
+}
+
+.sublink {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: whitesmoke;
+    font-size: 4.2vw;
 }
 
 @media (min-width: 1281px) {

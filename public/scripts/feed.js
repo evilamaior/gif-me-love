@@ -1,6 +1,7 @@
 const gifBase = document.querySelector('.gifBase');
 const dataBase = firebase.database();
 const USER_ID = window.location.search.match(/\?id=(.*)/)[1];
+const kkk = document.querySelector(".kkk");
 let index = 0;
 
 function getGifOnApi() {
@@ -51,6 +52,7 @@ function incrementIndex() {
   }
 }
 
+kkk.addEventListener('click', modal);
 
 function sendGifsToFirebase(url) {
   dataBase.ref(`${USER_ID}/favoriteGifs/`).push({
