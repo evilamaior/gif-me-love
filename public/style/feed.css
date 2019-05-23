@@ -1,9 +1,41 @@
 body {
-    background-color: #4b555d;
+    /* background-color:#252728; */
+    background-image: url("/images/background.jpg");
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-top: 5%;
+}
+
+.logo {
+    font-family: 'Caveat', cursive;
+    color: 	#df0021;
+    font-size: 30px;
+}
+
+.fa-gratipay {
+    color: 	#df0021;
+    font-size: 25px;
+}
+
+.fa-user {
+    font-size: 18px;
+    color: #df0021;
+}
+
+.fa-sign-out-alt {
+    font-size: 20px;
+    color: #df0021;
 }
 
 .fa-heart {
-    color: rgb(245, 94, 102);
+    color:#df0021;
     font-size: 35px;
 }
 
@@ -13,6 +45,7 @@ body {
 }
 
 .fa-times-circle {
-    color: red;
+    color: black;
     font-size: 35px;
 }
+
