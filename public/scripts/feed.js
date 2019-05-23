@@ -26,6 +26,7 @@ hammer.on('swipe', function (event) {
   if (event.deltaX > 0) {
     sendGifsToFirebase(event.target.src);
     getGifOnApi()
+    incrementIndex()
   }
   else {
     getGifOnApi()
@@ -44,5 +45,13 @@ function sendGifsToFirebase(url) {
     });
 }
 
+let gifCounter = 0;
+function incrementIndex() {
+  gifCounter ++;
+  if (gifCounter >= 5){
+    gifCounter = 0;
+    window.location = `match.html`
+  }
+}
 
 getGifOnApi();
