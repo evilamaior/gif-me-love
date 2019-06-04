@@ -1,7 +1,27 @@
 body {
   background-color:#181D21;
 }
-
+ 
+.container-fluid{
+  display: flex;
+}
+.container-card{
+  flex-direction: column; 
+  align-items: center; 
+}
+ 
+.img-responsive{
+  width: 100%;
+  height: auto;
+  margin-top: 20%;
+ 
+}
+.card-body{
+  background-color: white;
+}
+.card-title{
+  font-size: 26px;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -9,40 +29,23 @@ body {
   width: 90%;
   padding-top: 5%;
 }
-
 .logo {
   font-family: 'Caveat', cursive;
   color: 	#df0021;
   font-size: 30px;
 }
-
+ 
 .fa-gratipay {
   color: 	#df0021;
   font-size: 25px;
 }
-
+ 
 .fa-user {
   font-size: 18px;
   color: #df0021;
 }
-
+ 
 .fa-sign-out-alt {
   font-size: 20px;
   color: #df0021;
 }
-
-.fa-heart {
-  color:#df0021;
-  font-size: 35px;
-}
-
-.fa-grin-tears {
-  color: gold;
-  font-size: 35px;
-}
-
-.fa-times-circle {
-  color: black;
-  font-size: 35px;
-}
-

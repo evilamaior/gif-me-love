@@ -1,16 +1,14 @@
 const gifBase = document.querySelector('.gifBase');
 const dataBase = firebase.database();
-const USER_ID = window.location.search.match(/\?id=(.*)/)[1];
-const kkk = document.querySelector(".kkk");
 let index = 0;
 
 function getGifOnApi() {
   fetch('https://api.giphy.com/v1/gifs/trending?&api_key=xLzlu38r5osxj1ou6IA0hxMvrFVg3kad')
     .then(response => response.json())
-    .then(response => printTela(response.data))
+    .then(response => printNTela(response.data))
 }
 
-function printTela(data) {
+function printNTela(data) {
   const url = data[index].images.downsized_large.url;
   gifBase.innerHTML = template(url);
   index++;
@@ -25,37 +23,18 @@ function template(url) {
 
 const hammer = new Hammer(gifBase);
 hammer.on('swipe', function (event) {
-  
   if (event.deltaX > 0) {
     sendGifsToFirebase(event.target.src);
-    incrementIndex();
-    getGifOnApi();
+    getGifOnApi()
+    incrementIndex()
   }
   else {
-    getGifOnApi();
+    getGifOnApi()
   }
 })
 
-function modal() {
-  $("#demo01").animatedModal();
-  $(".modal-content").addClass("show d-flex flex-column align-items-center");
-  $('#demo01').click();
-}
-
-let gifCounter = 0;
-function incrementIndex() {
-  // pensar em um loop pra manter isso aqui seguindo com numeros al,eatorios no segundo?
-  gifCounter ++;
-  if (gifCounter >= 5){
-    modal();
-    gifCounter = 0;
-  }
-}
-
-kkk.addEventListener('click', modal);
-
 function sendGifsToFirebase(url) {
-  dataBase.ref(`${USER_ID}/favoriteGifs/`).push({
+  dataBase.ref("favoriteGifs/").push({
     url
   })
     .then(function () {
@@ -66,5 +45,13 @@ function sendGifsToFirebase(url) {
     });
 }
 
+let gifCounter = 0;
+function incrementIndex() {
+  gifCounter ++;
+  if (gifCounter >= 5){
+    gifCounter = 0;
+    window.location = `match.html`
+  }
+}
 
 getGifOnApi();
